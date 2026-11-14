@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For You</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="hearts"></div>
+
+<main>
+  <header class="hero">
+    <p class="eyebrow">A LITTLE CORNER OF OURS</p>
+    <h1 id="heroTitle"></h1>
+    <p id="heroSub" class="hero-sub"></p>
+  </header>
+
+  <div class="intro">
+    <article class="quote">
+      <div class="quote-mark"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.3 8.4 2 4.5 5.8 4.5c2.2 0 3.6 1.2 4.2 2.3.6-1.1 2-2.3 4.2-2.3 3.8 0 5.5 3.9 3.8 7.3C19.5 16.4 12 21 12 21z"/></svg></div>
+      <svg class="quote-watermark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-10-9.2C.3 8.4 2 4.5 5.8 4.5c2.2 0 3.6 1.2 4.2 2.3.6-1.1 2-2.3 4.2-2.3 3.8 0 5.5 3.9 3.8 7.3C19.5 16.4 12 21 12 21z"/></svg>
+      <blockquote id="mainQuote"></blockquote>
+      <cite id="mainSign"></cite>
+    </article>
+
+    <figure class="feature-card" id="featureCard">
+      <div class="feature-image" id="featureImage"></div>
+      <figcaption><span class="feature-heart"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.3 8.4 2 4.5 5.8 4.5c2.2 0 3.6 1.2 4.2 2.3.6-1.1 2-2.3 4.2-2.3 3.8 0 5.5 3.9 3.8 7.3C19.5 16.4 12 21 12 21z"/></svg></span><span id="featureCaption">A MOMENT TO KEEP</span></figcaption>
+    </figure>
+  </div>
+
+  <section id="memories">
+    <div class="sec-head"><h2 id="memTitle"></h2><p id="memSub"></p></div>
+    <div class="grid" id="memGrid"></div>
+  </section>
+
+  <section id="songs">
+    <div class="sec-head"><h2 id="songTitle"></h2></div>
+    <div class="grid" id="songGrid"></div>
+  </section>
+</main>
+
+<button id="openLetter"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.3 8.4 2 4.5 5.8 4.5c2.2 0 3.6 1.2 4.2 2.3.6-1.1 2-2.3 4.2-2.3 3.800 0 5.500 3.900 3.800 7.300C19.500 16.400 12 21 12 21z"/></svg>Read My Letter</button>
+
+<div id="modal">
+  <div class="letter" role="dialog" aria-modal="true">
+    <button class="x" id="closeLetter" aria-label="Close">✕</button>
+    <svg class="lh" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.3 8.4 2 4.5 5.8 4.5c2.2 0 3.6 1.2 4.2 2.3.6-1.1 2-2.3 4.2-2.3 3.800 0 5.500 3.900 3.800 7.300C19.500 16.400 12 21 12 21z"/></svg>
+    <h3 id="letterTitle"></h3>
+    <div id="typed"></div>
+    <div class="sign" id="letterSign"></div>
+  </div>
+</div>
+
+<audio id="player"></audio>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
