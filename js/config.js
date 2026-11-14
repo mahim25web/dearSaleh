@@ -61,17 +61,26 @@ Someone who once wished for a forever with you. ❤️`,
 
   songsTitle: "Songs that remind me of you",
 
-  /* Add songs: `cover` = album art image, `audio` = mp3 file in this folder
-     (e.g. songs/one.mp3). Leave both "" for an empty slot. */
+  /* Paste a Spotify track URL or embed URL in `spotifyUrl`.
+     `coverImage` is optional; the Spotify player also shows the track artwork. */
   songs: [
-    { cover: "", title: "Song Title 1", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 2", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 3", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 4", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 5", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 6", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 7", sub: "Why this song reminds me of you", audio: "" },
-    { cover: "", title: "Song Title 8", sub: "Why this song reminds me of you", audio: "" },
+    { id: 1, title: "Every Moment", spotifyUrl: "https://open.spotify.com/track/78Bl0KxUsrCJ58yDE9WnEH", coverImage: "", sub: "Some feelings never learn how to fade." },
+    { id: 2, title: "Our Memories", spotifyUrl: "https://open.spotify.com/embed/track/3u947zydbp5jVgVNlaRgv4?utm_source=generator&si=b4cc90acefd54e51", coverImage: "", sub: "You were my once upon a time." },
+    { id: 3, title: "Please forgive me", spotifyUrl: "https://open.spotify.com/embed/track/6mHTwIXqZtuQUF1fEkrhFB?utm_source=generator&si=43e931534c774bdd", coverImage: "", sub: "A little piece of my heart will always belong to you." },
+    { id: 4, title: "The Emptiness", spotifyUrl: "https://open.spotify.com/embed/track/2xLaYf6XYIFz3tuUJjELAs?utm_source=generator&si=0ec2064c652049c8", coverImage: "", sub: "If only love could be enough." },
+    { id: 5, title: "ComeBack", spotifyUrl: "https://open.spotify.com/embed/track/23Wl7OlMXNnNyqAws1GHoP?utm_source=generator&si=d140e681023a4741", coverImage: "", sub: "We didn't last forever, but my feelings were real." },
+    { id: 6, title: "", spotifyUrl: "https://open.spotify.com/embed/track/0CRk02zqkxvLbn7eK2hdFQ?utm_source=generator&si=931186173eae4b75", coverImage: "", sub: "Somewhere between hello and goodbye, I found you." },
+    { id: 7, title: "", spotifyUrl: "https://open.spotify.com/embed/track/1OMGGBk7xDy2guzeZa6Kru?utm_source=generator&si=f7847b743b374097", coverImage: "", sub: "I wish our timing had been kinder." },
+    { id: 8, title: "", spotifyUrl: "https://open.spotify.com/embed/track/2rHxwYzdn66nDMmDmmio6W?utm_source=generator&si=3998dcdef6c342c6", coverImage: "", sub: "You still cross my mind in the quietest moments." },
+    { id: 9, title: "", spotifyUrl: "https://open.spotify.com/embed/track/3oL1ux49UhwJkIQos5NER5?utm_source=generator&si=c778cf05b5db4634", coverImage: "", sub: "Not together, but never ordinary." },
+    { id: 10, title: "", spotifyUrl: "https://open.spotify.com/embed/track/6bYBAGooa3R8kiVKlh58VI?utm_source=generator&si=3159f49b630d4ee1", coverImage: "", sub: "Maybe we were a beautiful story written at the wrong time." },
+    { id: 11, title: "", spotifyUrl: "https://open.spotify.com/embed/track/48wo8JVnTkD1pmLzrSpXRM?utm_source=generator&si=a8b235d36ee048fc", coverImage: "", sub: "I still remember us, even when I try not to." },
+    { id: 12, title: "", spotifyUrl: "https://open.spotify.com/embed/track/0DpUQ3mpAGy3bYsEKVy6t5?utm_source=generator&si=60494e3b1ca44da3", coverImage: "", sub: "You were once my favourite place to belong." },
+    { id: 13, title: "", spotifyUrl: "https://open.spotify.com/embed/track/0TsyaaM73GAKIxv38yzHV4?utm_source=generator&si=1b9eb1e931144c2a", coverImage: "", sub: "Since 2022, a part of my heart has known your name." },
+    { id: 14, title: "", spotifyUrl: "https://open.spotify.com/embed/track/3VJpl4jrFSqY3Y6mAzqfux?utm_source=generator&si=476335e412fa4d13", coverImage: "", sub: "If you ever wonder, yes, you mattered. More than you know.If you ever wonder, yes, you mattered. More than you know." },
+    { id: 15, title: "", spotifyUrl: "https://open.spotify.com/embed/track/1TWkdQ2k7ysSYwla66Ys6I?utm_source=generator&si=1f965d9000a24097", coverImage: "", sub: "Our story may have paused, but it never became meaningless." },
+    { id: 16, title: "", spotifyUrl: "https://open.spotify.com/embed/track/3gixnmepHSsyAuho34rprN?utm_source=generator&si=931ea403f17c45f7", coverImage: "", sub: "I never wanted a perfect love story. I just wanted ours." },
+    { id: 17, title: "", spotifyUrl: "https://open.spotify.com/embed/track/5tvFTOg5v1YAvMxN1YfMe5?utm_source=generator&si=532204a4c1a0420f", coverImage: "", sub: "Dear Saleh, you were never just someone. You were someone special." },
   ],
 
   letterTitle: "My Dearest Saleh,",

@@ -91,16 +91,11 @@ section { margin-top: 112px; }
 .thumb .empty svg { width: 30px; height: 30px; opacity: .6; }
 .memory .heart-sep { display: block; margin: 14px 0 8px; color: var(--pink); text-align: center; }
 .memory .caption { padding: 0 6px; color: #d6c6ce; font-family: 'Cormorant Garamond', serif; font-size: 1.08rem; font-style: italic; line-height: 1.4; text-align: center; }
-.song .name { overflow: hidden; margin: 14px 5px 0; font-size: .98rem; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.song .name { overflow: hidden; margin: 5px 5px 0; font-size: .98rem; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
 .song .sub { overflow: hidden; margin: 4px 5px 0; color: rgba(255,255,255,.5); font-size: .8rem; text-overflow: ellipsis; white-space: nowrap; }
-.play { position: absolute; right: 10px; bottom: 10px; display: grid; width: 44px; height: 44px; place-items: center; border: 0; border-radius: 50%; background: var(--pink); box-shadow: 0 6px 20px rgba(240,78,131,.38); cursor: pointer; transition: transform .2s; }
-.play:hover { transform: scale(1.08); }
-.play svg { width: 19px; height: 19px; fill: #fff; }
-.play .pause { display: none; }
-.song.playing .play .pause { display: block; }
-.song.playing .play .tri { display: none; }
-.song.playing { border-color: var(--pink); box-shadow: 0 12px 40px rgba(240,78,131,.16); }
-.play[disabled] { opacity: .45; cursor: not-allowed; }
+.song-cover { display: block; width: 100%; max-height: 180px; margin-bottom: 12px; border-radius: 12px; object-fit: cover; }
+.spotify-embed { display: block; width: 100%; height: 152px; margin-top: 12px; border: 0; border-radius: 12px; }
+.spotify-placeholder { display: grid; min-height: 96px; margin-top: 12px; padding: 18px; place-items: center; border: 1px dashed var(--line); border-radius: 12px; color: var(--muted); font-size: .8rem; text-align: center; }
 
 /* Letter */
 #openLetter { position: fixed; right: 28px; bottom: 24px; z-index: 20; display: flex; align-items: center; gap: 8px; padding: 11px 16px; border: 1px solid rgba(240,78,131,.45); border-radius: 999px; background: rgba(26,15,23,.82); backdrop-filter: blur(8px); color: #fff; font: 500 .78rem 'Outfit', sans-serif; cursor: pointer; box-shadow: 0 8px 26px rgba(0,0,0,.25); transition: background .2s, transform .2s; }
@@ -139,6 +134,7 @@ section { margin-top: 112px; }
   .memory .caption { padding: 0 2px; font-size: .95rem; }
   .song .name { font-size: .84rem; }
   .song .sub { font-size: .72rem; }
+  .song-cover { max-height: 140px; }
   #openLetter { right: 14px; bottom: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
