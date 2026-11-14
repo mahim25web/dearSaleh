@@ -77,6 +77,62 @@ main { position: relative; z-index: 1; width: min(1200px, 100%); margin: 0 auto;
 
 /* Collections */
 section { margin-top: 112px; }
+.love-note {
+  position: relative;
+  width: 100vw;
+  margin: 70px 0 0 calc(50% - 50vw);
+  padding: 40px 24px 32px;
+  background: linear-gradient(90deg, rgba(89, 15, 47, .12), rgba(16, 14, 18, .04) 60%);
+}
+.love-note::before,
+.love-note::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(240, 78, 131, .13);
+  content: '';
+}
+.love-note::before { top: 0; }
+.love-note::after { bottom: 0; }
+.love-note-card {
+  position: relative;
+  width: min(590px, 100%);
+  margin: 0 auto;
+  padding: 28px 30px 24px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.018);
+  text-align: center;
+}
+.love-note-heart {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #171218;
+  transform: translateX(-50%);
+}
+.love-note-heart svg { width: 12px; height: 12px; fill: var(--pink); }
+.love-note-card blockquote {
+  color: #d9cbd1;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .98rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+.love-note-card cite {
+  display: block;
+  margin-top: 14px;
+  color: var(--pink-soft);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .95rem;
+  font-style: italic;
+}
 .sec-head { margin-bottom: 32px; text-align: left; }
 .sec-head h2 { color: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 500; }
 .sec-head p { margin-top: 7px; color: var(--muted); font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; }
@@ -122,6 +178,8 @@ section { margin-top: 112px; }
   .quote { padding: 28px 25px; }
   .feature-card { width: min(100%, 410px); }
   section { margin-top: 80px; }
+  .love-note { margin-top: 48px; padding: 34px 20px 26px; }
+  .love-note-card { padding: 25px 20px 20px; }
 }
 @media (max-width: 480px) {
   main { padding: 40px 18px 100px; }
@@ -136,6 +194,11 @@ section { margin-top: 112px; }
   .song .sub { font-size: .72rem; }
   .song-cover { max-height: 140px; }
   #openLetter { right: 14px; bottom: 14px; }
+}
+@media (max-width: 600px) {
+  #songGrid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  #songGrid .song { width: min(100%, 520px); justify-self: center; padding: 12px 12px 16px; }
+  #songGrid .spotify-embed { height: 152px; min-height: 152px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

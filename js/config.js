@@ -32,6 +32,8 @@ And no matter where life takes us, our story will always remain something specia
 With love,
 Someone who once wished for a forever with you. ❤️`,
   mainSign:  "— Yours, Sho She",
+  loveNote: "Please never think that my reaching out to you means I lack self-respect. It simply means that my love for you will always be far greater than any pride.",
+  loveNoteSign: "— Yours, Sho She",
 
   memoriesTitle: "Our Memories",
   memoriesSub:   "Every moment captured, every smile I miss.",
